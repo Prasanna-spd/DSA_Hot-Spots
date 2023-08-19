@@ -24,3 +24,28 @@ public:
         return ans;
     }
 };
+
+// ****************************************************************************
+
+another method 
+
+#include <vector>
+#include <numeric>  // for accumulate
+using namespace std;
+
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        int maxWealth = 0;
+
+        for (const auto& customerAccounts : accounts) {
+            int customerWealth = accumulate(customerAccounts.begin(), customerAccounts.end(), 0);
+            maxWealth = max(maxWealth, customerWealth);
+        }
+
+        return maxWealth;
+    }
+};
+
+
+
