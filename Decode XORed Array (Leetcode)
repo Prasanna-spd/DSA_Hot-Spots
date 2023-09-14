@@ -4,7 +4,7 @@ It was encoded into another integer array encoded of length n - 1, such that enc
 
 You are given the encoded array. You are also given an integer first, that is the first element of arr, i.e. arr[0].
 
-Return the original array arr. It can be proved that the answer exists and is unique.
+Return the original array arr. It can be proved that the answer exists and is unique
 //******************************************************************************************
 
 class Solution {
