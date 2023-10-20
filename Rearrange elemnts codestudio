@@ -1,0 +1,25 @@
+https://www.codingninjas.com/studio/problems/alternate-numbers_6783445?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+
+vector<int> alternateNumbers(vector<int>&a) {
+    // Write your code here.
+    int n = a.size();
+    vector<int>result(n);
+    int pospointer=0;
+    int negapointer=1;
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]<0)
+        {
+            result[negapointer]=a[i];
+            negapointer+=2;
+        }
+        else
+        {
+            result[pospointer]=a[i];
+            pospointer+=2;
+        }
+    }
+    return result;
+
+}
